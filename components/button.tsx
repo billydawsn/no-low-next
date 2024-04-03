@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./button.module.css";
 
+import Icon from "./icon";
+
 interface ButtonProps {
   url: string;
   iconName: string;
@@ -10,7 +12,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ url, iconName, children }) => {
   return (
     <a href={url} className={styles.button}>
-      {iconName && <i className={"bi bi-" + iconName} />}
+      {iconName && <Icon name={iconName} />}
       {children}
     </a>
   );

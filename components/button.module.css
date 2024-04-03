@@ -7,8 +7,11 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button i {
+.button svg {
   margin-right: 8px;
 }
